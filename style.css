@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.barra-navegacion{
+    background-size:200px;
+    background-color:black;
+    display: flex;
+    align-items:flex-end;
+    background-image: url(/galeria/cabra-logo3.jpeg);
+    background-position:top;
+    background-repeat:no-repeat;
+    height: 180px;
+}
+
+.barra-navegacion .logo{
+    width: 160px;
+    height: 150px;
+    padding: 10px 5px 10px 25px;
+}
+
+ul{
+    list-style: none;
+    text-align:center;
+    display: flex;
+    width: 100%;
+}
+
+li{
+    display: inline;
+    padding: 10px 10px;
+    background-color:black;
+    width: 100%;
+}
+
+a:link{
+    color: aliceblue;
+}
+
+a:visited{
+    color: aliceblue;
+}
+
+.carrousel{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-area: 
+        "video video video";
+}
+
+.carrousel .filosa{
+    grid-column: 1/3;
+    padding: 30px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+}
+
+.cajitas{
+    width: 500px;
+    height: 550px;
+    padding: 20px;
+    background-color: black;
+    margin: 20px;
+}
+
+.cajitas h2{
+    text-align: center;
+    color:aliceblue;
+    padding: 20px;
+    font-size:25px;
+}
+
+.cajitas p{
+    color:aliceblue;
+    text-align: center;
+    line-height: 25px;
+}
+
+body{
+    background-color: rgb(17, 17, 17);
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 100px;
+}
+
+.form-1 input{
+    display: block;
+    padding: 7px;
+    margin: 10px 10px 10px 10px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.form-1 textarea{
+    display: block;
+    padding: 7px;
+    margin: 10px 10px 10px 10px;
+    width: 300px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.form-2 input{
+    display: block;
+    padding: 7px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.form-1{
+    background-color:rgb(41 41 41);
+    width: 500px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    grid-column-start: 1;
+}
+
+.form-2{
+    background-color:rgb(41 41 41);
+    width: 500px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form-1 .titulo-1{
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.form-2 .titulo-2{
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+}
+
+.video{
+    display: flex;
+    justify-content:flex-start;
+    margin:50px;
+}
+
+.pie-pagina .box-2 h2{
+    color: aliceblue;
+    text-align: center;
+    padding: 30px 30px 30px 30px;
+    background-color: black;
+}
+
+.subtitle h2{
+    background-color: black;
+    font-size: 20px;
+    color: aliceblue;
+    height: 80px;
+    text-align: center;
+    padding: 30px 20px 20px;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px ;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.entradas{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content:center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.entradas .entrada{
+    height: 500px;
+    width: 400px;
+    padding: 10px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content:center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.productos .cosas{
+    height: 500px;
+    width: 400px;
+    padding: 20px;
+}
+
+.subtitulo h2{
+    background-color: black;
+    font-size: 20px;
+    color: aliceblue;
+    height: 80px;
+    text-align: center;
+    padding: 30px 20px 20px;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px ;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.pie-pagina{
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.pie-pagina .box-1{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.pie-pagina .box-1 p{
+    color: aliceblue;
+    padding: 10px;
+}
+
+.pie-pagina .box-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding-right: 10px;
+}
+
+.pie-pagina .box-2 h2{
+    color: aliceblue;
+    font-size: medium;
+}
+
+.pie-pagina .box-2 .red-social i{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background-color:rgb(41 41 41);
+    border-radius: 10px;
+    text-align: center;
+    color:black;
+}
+
+@media screen and (max-width:768px) {
+
+    .entradas{
+        grid-template-columns:none;
+        justify-items: center;
+        margin: auto;
+    }
+
+    .entradas .entrada{
+        padding: 20px;
+    }
+
+    .subtitulo h2{
+        margin:20px 181px 0px 181px;
+    }
+
+    .subtitle h2{
+        margin:20px 181px 0px 181px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul{
+        width: 100%;
+        margin: 0;
+    }
+
+    .pie-pagina .box-1 p{
+        font-size: 12px;
+    }
+
+    .pie-pagina .box-2{
+        padding-right: 30px;
+    }
+
+    .pie-pagina .box-2 h2{
+        font-size: 12px;
+        margin: auto;
+    }
+
+    .form-1{
+        grid-column-start: 1;
+        margin-bottom: 30px;
+        justify-content: space-around;
+    }
+
+    .form-2{
+        grid-row-start: 3;
+        margin-top: 30px;
+        justify-content: space-around;
+    }
+
+    .video{
+        display: flex;
+        justify-items: center;
+        margin: auto;
+    }
+
+    .productos{
+        grid-template-columns:none;
+        justify-items: center;
+        margin: auto;
+    }
+    
+    .container{
+        grid-template-columns: none;
+        justify-items: center;
+    }
+
+    .carrousel{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+
+
+}
