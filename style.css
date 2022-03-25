@@ -39,6 +39,12 @@ li{
     padding: 10px 10px;
     background-color:black;
     width: 100%;
+    transition: all 0.2s linear;
+}
+
+li:hover{
+    transform: translate(1.1px, 1.1px);
+    box-shadow: 1px 1px 3px 1px rgb(41 41 41);
 }
 
 a:link{
@@ -75,6 +81,8 @@ a:visited{
     padding: 20px;
     background-color: black;
     margin: 20px;
+    animation-name: nosotros;
+    animation-duration: 3s;
 }
 
 .cajitas h2{
@@ -209,6 +217,11 @@ body{
     height: 500px;
     width: 400px;
     padding: 10px;
+    transition: all 0.3s linear;
+}
+
+.entradas .entrada:hover{
+    transform: scale(1.08, 1.08);
 }
 
 img{
@@ -235,6 +248,11 @@ img{
     height: 500px;
     width: 400px;
     padding: 20px;
+    transition: all 0.3s linear;
+}
+
+.productos .cosas:hover{
+    transform: scale(1.08, 1.08);
 }
 
 .subtitulo h2{
@@ -370,6 +388,14 @@ img{
         justify-content: space-around;
         margin: auto;
     }
+}
 
+@keyframes nosotros{
+    0%{
+        opacity: 10%;
+    }
 
+    100%{
+        opacity: 100%;
+    }
 }
