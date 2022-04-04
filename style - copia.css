@@ -32,8 +32,6 @@ ul{
     text-align:center;
     display: flex;
     width: 100%;
-    padding: 0%;
-    margin-bottom: 0%;
 }
 
 li{
@@ -57,13 +55,20 @@ a:visited{
     color: aliceblue;
 }
 
-.pictures{
-    margin-top: 20px;
-    height: 930px;
+.carrousel{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-area: 
+        "video video video";
 }
 
+.carrousel .filosa{
+    grid-column: 1/3;
+    padding: 30px;
+}
 
-.container-cajas{
+.container{
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
@@ -157,16 +162,10 @@ body{
     border-radius: 10px;
 }
 
-.titulo{
-    font-size:1.5rem;
+.form-1 .titulo-1{
     color: aliceblue;
     text-align: center;
     padding: 20px;
-}
-
-.boton{
-    width: 300px;
-    margin-left: 10px;
 }
 
 .form-2 .titulo-2{
@@ -189,32 +188,40 @@ body{
 }
 
 .subtitle h2{
+    background-color: black;
     font-size: 20px;
     color: aliceblue;
     height: 80px;
     text-align: center;
     padding: 30px 20px 20px;
     margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px ;
+    border-radius: 10px 10px 0px 0px;
 }
 
-.entrada{
-    height: 700px;
-    padding-bottom: 20px;
-    transition: all 0.3s linear;
+.entradas{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content:center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    background-color:black;
+    border-radius: 0px 0px 10px 10px;
 }
 
-.entrada:hover{
-    transform: scale(1.1);
-}
-
-.producto{
+.entradas .entrada{
     height: 500px;
-    padding-bottom: 20px;
+    width: 400px;
+    padding: 10px;
     transition: all 0.3s linear;
 }
 
-.producto:hover{
-    transform: scale(1.1);
+.entradas .entrada:hover{
+    transform: scale(1.08, 1.08);
 }
 
 img{
@@ -249,12 +256,16 @@ img{
 }
 
 .subtitulo h2{
+    background-color: black;
     font-size: 20px;
     color: aliceblue;
     height: 80px;
     text-align: center;
     padding: 30px 20px 20px;
     margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px ;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .pie-pagina{
@@ -298,18 +309,18 @@ img{
     border-radius: 10px;
     text-align: center;
     color:black;
-    margin-right: 3px;
-    transition: all 0.2s linear;
-}
-
-.red-social i:hover{
-    transform: scale(1.2);
 }
 
 @media screen and (max-width:768px) {
 
-    .pictures{
-        height: 520px;
+    .entradas{
+        grid-template-columns:none;
+        justify-items: center;
+        margin: auto;
+    }
+
+    .entradas .entrada{
+        padding: 20px;
     }
 
     .subtitulo h2{
@@ -367,7 +378,7 @@ img{
         margin: auto;
     }
     
-    .container-cajas{
+    .container{
         grid-template-columns: none;
         justify-items: center;
     }
