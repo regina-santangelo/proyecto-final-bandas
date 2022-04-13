@@ -1,0 +1,17 @@
+.producto{
+    height: 450px;
+    margin-bottom: 30px;
+    transition: all 0.3s linear;
+}
+.producto:hover{
+    transform: scale(1.1);
+}
+
+.subtitulo h2{
+    font-size: 20px;
+    color:map-get($mapa, color);
+    height: 80px;
+    text-align: center;
+    padding: 30px 20px 20px;
+    margin-top: 10px;
+}

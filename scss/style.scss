@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import "./partials/mapas";
+@import "./partials/mediaQuerys";
+@import "./partials/header";
+@import "./partials/contacto";
+@import "./partials/body";
+@import "./partials/nosotros";
+@import "./partials/footer";
+@import "./partials/entradas";
+@import "./partials/productos";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pictures{
+    margin-top: 20px;
+    height: 930px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+@keyframes nosotros{
+    0%{
+        opacity: 10%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}

@@ -1,21 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.form-1, .form-2, .box-1, .box-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .pictures {
+    height: 500px !important;
+  }
+  .subtitulo h2 {
+    margin: 20px 181px 0px 181px;
+  }
+  .subtitle h2 {
+    margin: 20px 181px 0px 181px;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  ul {
+    width: 100%;
+    margin: 0;
+  }
+  .pie-pagina .box-1 p {
+    font-size: 12px;
+  }
+  .pie-pagina .box-2 {
+    padding-right: 10px;
+  }
+  .pie-pagina .box-2 h2 {
+    font-size: 12px;
+    margin: auto;
+  }
+  .form-1 {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    margin-bottom: 30px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .form-2 {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    margin-top: 30px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .video-1 {
+    width: 600px;
+    height: 450px;
+  }
+  .container-cajas {
+    -ms-grid-columns: none !important;
+        grid-template-columns: none !important;
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .barra-navegacion {
   background-size: 200px;
-  background-color: black;
+  background-color: black !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background-image: url(./galeria/cabra-logo3.jpeg);
+  background-image: url(/galeria/cabra-logo3.jpeg);
   background-position: top;
   background-repeat: no-repeat;
   height: 180px;
@@ -61,53 +124,6 @@ a:visited {
   color: aliceblue;
 }
 
-.container-cajas {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.container-cajas .cajitas {
-  width: 500px;
-  height: 550px;
-  padding: 20px;
-  background-color: black;
-  margin: 20px;
-  -webkit-animation-name: nosotros;
-          animation-name: nosotros;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
-
-.container-cajas .cajitas h2 {
-  text-align: center;
-  color: aliceblue;
-  padding: 20px;
-  font-size: 25px;
-}
-
-.container-cajas .cajitas p {
-  color: aliceblue;
-  text-align: center;
-  line-height: 25px;
-}
-
-body {
-  background-color: #111111;
-  font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  display: -ms-grid;
-  display: grid;
-  min-height: 100vh;
-  -ms-grid-rows: auto 1fr auto;
-      grid-template-rows: auto 1fr auto;
-}
-
 .container2 {
   display: -ms-grid;
   display: grid;
@@ -120,19 +136,13 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 100px;
+  padding: 60px;
 }
 
 .form-1 {
-  background-color: #292828;
+  background-color: rgba(0, 0, 0, 0.637);
   width: 500px;
   height: 420px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 10px;
   border-radius: 10px;
   -ms-grid-column: 1;
@@ -157,15 +167,9 @@ body {
 }
 
 .form-2 {
-  background-color: #292828;
+  background-color: rgba(0, 0, 0, 0.637);
   width: 500px;
   height: 420px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 10px;
   border-radius: 10px;
 }
@@ -190,19 +194,53 @@ body {
   margin-left: 10px;
 }
 
-.pictures {
-  margin-top: 20px;
-  height: 930px;
+body {
+  background-color: #111111;
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
 }
 
-.video {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin: 50px;
+.container-cajas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-cajas .cajitas {
+  width: 500px;
+  height: 550px;
+  padding: 20px;
+  background-color: black;
+  margin: 20px;
+  border-radius: 20px;
+  -webkit-animation-name: nosotros;
+          animation-name: nosotros;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.container-cajas .cajitas h2 {
+  text-align: center;
+  color: aliceblue;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.container-cajas .cajitas p {
+  color: aliceblue;
+  text-align: center;
+  line-height: 25px;
 }
 
 .pie-pagina {
@@ -225,23 +263,11 @@ body {
 }
 
 .box-1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 15px;
   padding-top: 15px;
 }
 
 .box-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -274,7 +300,6 @@ body {
           transform: scale(1.2);
 }
 
-/*revisar parte de red social*/
 .subtitle h2 {
   font-size: 20px;
   color: aliceblue;
@@ -327,66 +352,26 @@ img {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .pictures {
-    height: 520px;
-    margin-top: 10px;
-  }
-  .subtitulo h2 {
-    margin: 20px 181px 0px 181px;
-  }
-  .subtitle h2 {
-    margin: 20px 181px 0px 181px;
-  }
-  main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  ul {
-    width: 100%;
-    margin: 0;
-  }
-  .pie-pagina .box-1 p {
-    font-size: 12px;
-  }
-  .pie-pagina .box-2 {
-    padding-right: 10px;
-  }
-  .pie-pagina .box-2 h2 {
-    font-size: 12px;
-    margin: auto;
-  }
-  .form-1 {
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    margin-bottom: 30px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .form-2 {
-    -ms-grid-row: 3;
-        grid-row-start: 3;
-    margin-top: 30px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .video {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-items: center;
-    margin: auto;
-  }
-  .container-cajas {
-    -ms-grid-columns: none;
-        grid-template-columns: none;
-    justify-items: center;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pictures {
+  margin-top: 20px;
+  height: 930px;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
 }
 
 @-webkit-keyframes nosotros {

@@ -1,0 +1,31 @@
+.container-cajas{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-content:center;
+    
+
+    .cajitas{
+        width: 500px;
+        height: 550px;
+        padding: 20px;
+        background-color: black;
+        margin: 20px;
+        border-radius: 20px;
+        animation-name: nosotros;
+        animation-duration: 3s;
+
+        h2{
+            text-align: center;
+            color:map-get($mapa, color);
+            padding: 20px;
+            font-size:25px;
+        }
+
+        p{
+            color:map-get($mapa,color);
+            text-align: center;
+            line-height: 25px;
+        }
+    }
+}

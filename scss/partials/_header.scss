@@ -1,0 +1,46 @@
+.barra-navegacion{
+    background-size:200px;
+    background-color:black !important;
+    display: flex;
+    align-items:flex-end;
+    background-image: url(/galeria/cabra-logo3.jpeg);
+    background-position:top;
+    background-repeat:no-repeat;
+    height: 180px;
+
+    ul{
+        list-style: none;
+        text-align:center;
+        display: flex;
+        width: 100%;
+        padding: 0%;
+        margin-bottom: 0%;
+
+        li{
+            display: inline;
+            padding: 10px 10px;
+            background-color:black;
+            width: 100%;
+            transition: all 0.2s linear;
+            transition: all 0.2s linear;
+        }
+    }
+}
+
+
+li:hover{
+    transform: translate(1.1px, 1.1px);
+    box-shadow: 1px 1px 3px 1px rgb(41, 40, 40);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: map-get($mapa , color);
+}
+
+a:visited{
+    color:map-get($mapa , color);
+}

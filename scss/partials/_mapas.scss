@@ -1,0 +1,14 @@
+$mapa: (
+    background-color:rgba(0, 0, 0, 0.637),
+    color:aliceblue,
+    );
+
+%flex{
+    display: flex;
+    justify-content:center;
+}
+
+@mixin flex ($display, $horizontal){
+    display: $display;
+    justify-content: $horizontal;
+}

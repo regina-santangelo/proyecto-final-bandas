@@ -1,0 +1,46 @@
+.pie-pagina{
+    background-color:black;
+    @include flex (flex, space-between);
+    align-items: center;
+    width: 100%;
+    p{
+        color: map-get($mapa, color);
+        padding: 10px;
+    }
+}
+
+.box-1{
+    @extend %flex;
+    margin: 15px;
+    padding-top:15px;
+}
+
+.box-2{
+    @extend %flex;
+    align-items: center;
+    margin: 10px;
+    padding-right: 10px;
+
+    h2{
+        color:map-get($mapa , color);
+        font-size: medium;
+        padding-right: 10px;
+    }
+}
+
+.pie-pagina .box-2 .red-social i{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background-color:rgb(41, 40, 40);
+    border-radius: 10px;
+    text-align: center;
+    color:black;
+    margin-right: 3px;
+    transition: all 0.2s linear;
+}
+
+.red-social i:hover{
+    transform: scale(1.2);
+}
