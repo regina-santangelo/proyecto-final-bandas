@@ -1,5 +1,5 @@
 .barra-navegacion{
-    background-size:200px;
+    background-size:180px;
     background-color:black !important;
     display: flex;
     align-items:flex-end;
@@ -8,17 +8,30 @@
     background-repeat:no-repeat;
     height: 180px;
 
+    .titulo-1{
+        color: aliceblue;
+        font-size:23px !important;
+    }
+
+    .titulo{
+        color: aliceblue !important;
+        font-size: 15px;
+    }
+
+    .botonHamburguesa{
+        background-color: rgb(37, 37, 37);
+    }
+
     ul{
         list-style: none;
         text-align:center;
-        display: flex;
         width: 100%;
         padding: 0%;
         margin-bottom: 0%;
 
         li{
+            color: aliceblue;
             display: inline;
-            padding: 10px 10px;
             background-color:black;
             width: 100%;
             transition: all 0.2s linear;
@@ -26,6 +39,7 @@
         }
     }
 }
+
 
 
 li:hover{
