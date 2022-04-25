@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
 .form-1, .form-2, .box-1, .box-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9,8 +10,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  .titulo-1 {
+    color: black !important;
+  }
   .pictures {
-    height: 360px !important;
+    height: 300px !important;
   }
   main {
     display: -webkit-box;
@@ -25,26 +29,43 @@
     width: 100%;
     margin: 0;
   }
+  .box-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .pie-pagina .box-1 p {
     font-size: 10px;
   }
-  .pie-pagina .box-2 {
-    padding-right: 8px;
+  .box-2 {
+    margin-right: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .pie-pagina .box-2 h2 {
+  .box-2 h2 {
     font-size: 10px;
-    margin: auto;
+    padding: 10px;
   }
   .entrada {
-    height: 200px;
+    height: 520px !important;
+    padding: 10px 30px 30px 30px;
     margin: auto;
   }
+  .producto {
+    padding: 10px 20px 20px 20px;
+  }
   .container2 {
-    -ms-grid-columns: none;
-        grid-template-columns: none;
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .form-1 {
-    width: 330px !important;
+    width: 100vw !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -53,7 +74,7 @@
     font-size: 20px;
   }
   .form-2 {
-    width: 330px !important;
+    width: 100vw !important;
     -ms-grid-row: 3;
         grid-row-start: 3;
     margin-top: 20px;
@@ -63,7 +84,7 @@
   }
   .video-1 {
     width: 360px;
-    height: 300px;
+    height: 260px;
   }
   .container-cajas {
     -ms-grid-columns: none;
@@ -91,7 +112,9 @@
 
 .barra-navegacion .titulo-1 {
   color: aliceblue;
-  font-size: 23px !important;
+  font-size: 32px !important;
+  padding-left: 30px;
+  font-family: 'Cinzel', serif;
 }
 
 .barra-navegacion .titulo {
@@ -149,9 +172,9 @@ a:visited {
       grid-template-rows: auto auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 60px;
 }
 
@@ -287,7 +310,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px;
+  margin: 20px;
   padding-right: 10px;
 }
 
@@ -330,6 +353,7 @@ body {
   padding-bottom: 20px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  width: 100%;
 }
 
 .entrada:hover {
@@ -337,21 +361,12 @@ body {
           transform: scale(1.1);
 }
 
-img {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .producto {
   height: 450px;
   margin-bottom: 30px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  width: 100%;
 }
 
 .producto:hover {
@@ -366,6 +381,41 @@ img {
   text-align: center;
   padding: 30px 20px 20px;
   margin-top: 10px;
+}
+
+.cosas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  justify-items: center;
+}
+
+.entrada-pagina {
+  width: 500px;
+  margin: 20px;
+}
+
+.entrada-pagina .flyer {
+  width: 100%;
+  height: 100%;
+}
+
+.mapa {
+  margin: 20px;
+}
+
+.bandas {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 20px;
+}
+
+.bandas h3 {
+  color: aliceblue;
 }
 
 * {
@@ -388,6 +438,28 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 30px;
+}
+
+.whatsapp {
+  display: inline-block;
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.349);
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.whatsapp i {
+  font-size: 40px;
+  color: aliceblue;
+}
+
+i:hover {
+  color: grey;
 }
 
 @-webkit-keyframes nosotros {

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAA;EACX,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,IAAI;CAKzB;;AARD,AAKI,eALW,CAKX,CAAC,CAAA;EACG,KAAK,EAAE,SAAS;CACnB",
+    "sources": [
+        "../partials/pagina-entrada-1.scss"
+    ],
+    "names": [],
+    "file": "pagina-entrada-1.css"
+}
