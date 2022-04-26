@@ -1,0 +1,60 @@
+.cosas{
+    display: grid;
+    grid-template-columns: auto auto 400px;
+    grid-template-rows: 50px 250px 250px 250px 250px 250px;
+    justify-items:center;
+    align-items:flex-start;
+    padding: 40px;
+    margin:40px;
+    background-color: rgba(0, 0, 0, 0.678);
+    border-radius: 30px;
+}
+
+.subtitulo{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    color: aliceblue;
+    
+}
+
+.entrada-pagina{
+    grid-row-start: span 3;
+    width: 600px;
+    padding: 0px 20px 20px 20px;
+    .flyer{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.mapa{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    width:100%;
+    height: 100%;
+}
+
+.spotify{
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.spotify-1{
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.spotify-2{
+    grid-column-start: 3;
+    grid-row-start: 4;
+}
+
+.spotify-3{
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+.spotify-4{
+    grid-column-start: 3;
+    grid-row-start: 6;
+}
