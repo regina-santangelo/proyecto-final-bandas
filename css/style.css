@@ -173,7 +173,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background-image: url(/galeria/cabra-logo3.jpeg);
+  background-image: url(./galeria/cabra-logo3.jpeg);
   background-position: top;
   background-repeat: no-repeat;
   height: 180px;
@@ -303,7 +303,7 @@ a:visited {
 }
 
 body {
-  background-image: url(/galeria/wall.png);
+  background-image: url(./galeria/wall.png);
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
   display: -ms-grid;
