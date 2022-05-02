@@ -1,10 +1,10 @@
 .cosas{
     display: grid;
     grid-template-columns: auto auto 400px;
-    grid-template-rows: 50px 250px 250px 250px 250px 250px;
+    grid-template-rows: 50px 250px 250px 250px 200px 250px;
     justify-items:center;
     align-items:flex-start;
-    padding: 40px;
+    padding: 40px 40px 0px 0px;
     margin:40px;
     background-color: rgba(0, 0, 0, 0.678);
     border-radius: 30px;
@@ -14,47 +14,151 @@
     grid-column-start: 3;
     grid-row-start: 1;
     color: aliceblue;
-    
+    font-style: oblique;
 }
 
 .entrada-pagina{
-    grid-row-start: span 3;
+    grid-row-start: span 4;
     width: 600px;
     padding: 0px 20px 20px 20px;
+    margin-right: 20px;
     .flyer{
         width: 100%;
-        height: 100%;
+        height: 820px
+    }
+}
+
+.precio{
+    grid-column-start: 1;
+    grid-row-start: 5;
+    width: 80%;
+    height: 70px;
+    margin-top: 40px;
+    text-align: center;
+    background-color:rgba(240, 248, 255, 0.486);
+    font-size: 23px;
+    padding-top: 17px;
+    border-radius: 20px;
+    p{
+        color: aliceblue;
     }
 }
 
 .mapa{
-    grid-column-start: 2;
-    grid-row-start: 1;
-    width:100%;
-    height: 100%;
+    margin: 48px 50px 0px 0px;
 }
 
 .spotify{
     grid-column-start: 3;
     grid-row-start: 2;
+    width: 100%;
 }
 
 .spotify-1{
     grid-column-start: 3;
     grid-row-start: 3;
+    width: 100%;
+    margin-top: 40px;
 }
 
 .spotify-2{
     grid-column-start: 3;
     grid-row-start: 4;
+    width: 100%;
+    margin-top: 80px;
 }
 
 .spotify-3{
     grid-column-start: 3;
-    grid-row-start: 5;
+    grid-row-start: 6;
+    width: 100%;
+    margin-top: -60px;
 }
 
 .spotify-4{
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-row-start: 6;
+    width: 90%;
+    margin-right: 50px;
+}
+
+.spotify-5{
+    grid-column-start: 1;
+    grid-row-start: 6;
+    width: 90%;
+}
+
+.texto{
+    width: 90%;
+    height: 320px;
+    grid-row-start: span 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    background-color: black;
+    border-color: rgb(38, 43, 48);
+    border-style:solid;
+    margin-right: 50px;
+    font-family: 'Cinzel', serif;
+    h3{
+        color: aliceblue;
+        text-align: center;
+        padding: 30px;
+    }
+    p{
+        color: aliceblue;
+        font-size: 18px;
+        padding-left: 20px;
+
+    }
+}
+
+.medios-pago{
+    grid-column-start:2;
+    grid-row-start: 5;
+    text-align: center;
+    font-size: 20px;
+    width: 90%;
+    height: 120px;
+    margin: 10px 50px 0px 0px;
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.486);
+    p{
+        padding-top: 10px;
+        color: aliceblue;
+    }
+    i{
+        padding-right: 50px;
+        padding-left: 50px;
+        font-size:25px;
+        color: aliceblue;
+    }
+}
+
+.redes{
+    text-align: center;
+    width: 100%;
+    height: 280px;
+    background-color: black;
+    grid-column-start: span 2;
+    grid-row-start: 6;
+    margin-right: 30px;
+    margin-top: -40px;
+    border-radius: 50px;
+    h4{
+        color: aliceblue;
+        padding: 20px;
+    }
+
+    p{
+        color: aliceblue;
+        font-size: 17px;
+    }
+
+    i{
+        font-size: 18px;
+        padding-right: 10px;
+        color: aliceblue;
+        margin-left: 10px;
+    }
+    
 }

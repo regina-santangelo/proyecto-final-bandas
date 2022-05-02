@@ -1,3 +1,9 @@
+.fondo{
+    background-color: rgba(0, 0, 0, 0.678);
+    margin:0px 200px 30px 200px;
+    border-radius: 20px;
+}
+
 .subtitle h2{
     font-size: 20px;
     color:map-get($mapa, color );
@@ -8,7 +14,7 @@
 }
 
 .entrada{
-    height: 650px;
+    height: 700px;
     padding-bottom: 20px;
     transition: all 0.3s linear;
     width: 100%;

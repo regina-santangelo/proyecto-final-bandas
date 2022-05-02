@@ -9,7 +9,7 @@
 @import "./partials/footer";
 @import "./partials/entradas";
 @import "./partials/productos";
-@import "./partials/pagina-entrada-uno.scss";
+@import "./partials/pagina-entrada-uno";
 
 *{
     margin: 0;
@@ -34,7 +34,7 @@
     position: fixed;
     bottom:120px;
     right: 20px;
-    background-color: rgba(0, 0, 0, 0.349);
+    background-color: rgba(65, 7, 7, 0.747);
     width: 60px;
     height: 60px;
     border-radius: 30px;
@@ -47,7 +47,7 @@
 }
 
 i:hover{
-    color: grey;
+    color: rgb(70, 67, 67);
 }
 
 

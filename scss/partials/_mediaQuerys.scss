@@ -1,4 +1,7 @@
 @media screen and (max-width:768px) {
+    .fondo{
+        margin: 0px !important;
+    }
 
     .titulo-1{
        color: black !important;
@@ -55,7 +58,6 @@
         h2{
             font-size: 20px;
         }
-        
     }
 
     .form-2{
@@ -73,10 +75,78 @@
     }
     
     .container-cajas{
-        grid-template-columns:none;
+        grid-template-columns:none !important;
+        flex-direction: column;
     }
 
     .cajitas{
         width: 360px !important;
+    }
+
+    .cosas{
+        display:contents !important;
+        justify-content: center;
+        width: 100vw;
+        margin: auto !important;
+    }
+
+    .entrada-pagina{
+        width: auto !important;
+        margin: 10px 10px 0px 10px;
+        padding: 0%;
+        img{
+            height: 650px !important;
+        }
+    }
+
+    .mapa{
+        margin: 20px 0px 0px 0px !important;
+
+        iframe{
+          width:90vw !important;
+          height: 300px;
+          padding-left: 35px;
+          
+        }
+    }
+    
+    .spotify{
+        padding: 10px;
+    }
+    .spotify-1{
+        padding: 10px;
+        margin-top: 0px !important;
+    }
+    .spotify-2{
+        padding: 10px;
+        margin-top: 0px !important;
+    }
+    .spotify-3{
+        padding: 10px;
+        margin-top: 10px !important;
+    }
+    .spotify-4{
+        padding: 10px;
+        width: 100% !important;
+    }
+    .spotify-5{
+        padding: 10px;
+        width: 100% !important;
+    }
+
+    .precio{
+        margin-right: 0px !important;
+        margin-inline-start: 40px;
+        margin-top: 0px !important;
+        margin-bottom: 15px;
+    }
+
+    .texto{
+        margin-inline-start: 20px;
+    }
+
+    .medios-pago{
+        margin-left: 20px !important;
+        margin-right: 0px !important;
     }
 }
