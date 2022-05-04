@@ -14,7 +14,7 @@
     margin: 0px !important;
   }
   .titulo-1 {
-    color: black !important;
+    font-size: 20px !important;
   }
   .pictures {
     height: 300px !important;
@@ -57,6 +57,11 @@
     padding: 10px 30px 30px 30px;
     margin: auto;
   }
+  .entrada-1 {
+    height: 520px !important;
+    padding: 10px 30px 30px 30px;
+    margin: auto;
+  }
   .producto {
     padding: 10px 20px 20px 20px;
   }
@@ -85,9 +90,13 @@
   .form-2 h2 {
     font-size: 20px;
   }
+  .video {
+    width: auto;
+  }
   .video-1 {
-    width: 360px;
+    width: 100%;
     height: 260px;
+    padding: 10px !important;
   }
   .container-cajas {
     -ms-grid-columns: none !important;
@@ -96,9 +105,15 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100vw;
   }
   .cajitas {
-    width: 360px !important;
+    width: auto !important;
+  }
+  .cajitas img {
+    width: 330px !important;
+    height: 250px !important;
+    margin: auto !important;
   }
   .cosas {
     display: contents !important;
@@ -158,6 +173,12 @@
     -webkit-margin-start: 20px;
             margin-inline-start: 20px;
   }
+  .texto p {
+    font-size: 15px !important;
+  }
+  .subtitulo {
+    margin: 20px 0px 0px 20px;
+  }
   .medios-pago {
     margin-left: 20px !important;
     margin-right: 0px !important;
@@ -165,18 +186,7 @@
 }
 
 .barra-navegacion {
-  background-size: 160px;
   background-color: black !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  background-image: url(./galeria/cabra-logo3.jpeg);
-  background-position: top;
-  background-repeat: no-repeat;
-  height: 180px;
 }
 
 .barra-navegacion .titulo-1 {
@@ -211,6 +221,22 @@
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   transition: all 0.2s linear;
+}
+
+.headerLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 90px;
+  width: 100%;
+  background-color: black;
+}
+
+.headerLogo img {
+  width: 150px;
 }
 
 li:hover {
@@ -303,7 +329,7 @@ a:visited {
 }
 
 body {
-  background-image: url(./galeria/wall.png);
+  background-image: url(/galeria/wall.png);
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
   display: -ms-grid;
@@ -329,7 +355,7 @@ body {
   width: 500px;
   height: 550px;
   padding: 20px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.637);
   margin: 20px;
   border-radius: 20px;
   -webkit-animation-name: nosotros;
@@ -349,6 +375,22 @@ body {
   color: aliceblue;
   text-align: center;
   line-height: 25px;
+}
+
+.container-cajas .cajitas img {
+  height: 280px;
+  width: 420px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 20px 0px 20px 0px;
+}
+
+.container-cajas .cajitas .pic-details img {
+  height: 280px;
+  width: 420px;
+  margin-left: 20px;
+  margin-top: 35px;
+  border-radius: 20px 0px 20px 0px;
 }
 
 .pie-pagina {
@@ -394,10 +436,11 @@ body {
   width: 35px;
   height: 35px;
   line-height: 35px;
-  background-color: #292828;
+  background-color: rgba(65, 7, 7, 0.747);
   border-radius: 10px;
   text-align: center;
-  color: black;
+  color: aliceblue;
+  font-size: 19px;
   margin-right: 3px;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -423,7 +466,7 @@ body {
   margin-top: 10px;
 }
 
-.entrada {
+.entrada-1 {
   height: 700px;
   padding-bottom: 20px;
   -webkit-transition: all 0.3s linear;
@@ -431,9 +474,17 @@ body {
   width: 100%;
 }
 
-.entrada:hover {
+.entrada-1:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.entrada {
+  height: 700px;
+  padding-bottom: 20px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  width: 100%;
 }
 
 .fondo {
