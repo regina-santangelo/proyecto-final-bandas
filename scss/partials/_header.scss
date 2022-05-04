@@ -1,13 +1,6 @@
 .barra-navegacion{
-    background-size:160px;
     background-color:black !important;
-    display: flex;
-    align-items:flex-end;
-    background-image: url(./galeria/cabra-logo3.jpeg);
-    background-position:top;
-    background-repeat:no-repeat;
-    height: 180px;
-
+    
     .titulo-1{
         color: aliceblue;
         font-size:26px;
@@ -42,6 +35,16 @@
     }
 }
 
+.headerLogo{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    img{
+        width: 150px;
+    }
+}
 
 
 li:hover{

@@ -9,7 +9,7 @@
         width: 500px;
         height: 550px;
         padding: 20px;
-        background-color: black;
+        background-color:map-get($mapa, background-color);
         margin: 20px;
         border-radius: 20px;
         animation-name: nosotros;
@@ -26,6 +26,24 @@
             color:map-get($mapa,color);
             text-align: center;
             line-height: 25px;
+        }
+
+        img{
+            height: 280px;
+            width:420px;
+            margin-left: 20px;
+            margin-top: 10px;
+            border-radius: 20px 0px 20px 0px;
+        }
+
+        .pic-details{
+            img{
+                height: 280px;
+                width:420px;
+                margin-left: 20px;
+                margin-top: 35px;
+                border-radius: 20px 0px 20px 0px;
+            }
         }
     }
 }

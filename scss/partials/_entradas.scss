@@ -13,14 +13,20 @@
     margin-top: 10px;
 }
 
-.entrada{
+.entrada-1{
     height: 700px;
     padding-bottom: 20px;
     transition: all 0.3s linear;
     width: 100%;
 }
 
-.entrada:hover{
+.entrada-1:hover{
     transform: scale(1.1);
 }
 
+.entrada{
+    height: 700px;
+    padding-bottom: 20px;
+    transition: all 0.3s linear;
+    width: 100%;
+}

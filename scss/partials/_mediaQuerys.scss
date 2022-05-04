@@ -4,7 +4,7 @@
     }
 
     .titulo-1{
-       color: black !important;
+       font-size: 20px !important;
     }
 
     .pictures{
@@ -42,6 +42,11 @@
         padding: 10px 30px 30px 30px;
         margin: auto;
     }
+    .entrada-1{
+        height: 520px !important;
+        padding: 10px 30px 30px 30px;
+        margin: auto;
+    }
 
     .producto{
         padding: 10px 20px 20px 20px;
@@ -68,19 +73,28 @@
             font-size: 20px;
         }
     }
-
+    .video{
+        width: auto;
+    }
     .video-1{
-        width: 360px;
+        width: 100%;
         height: 260px;
+        padding: 10px !important;
     }
     
     .container-cajas{
         grid-template-columns:none !important;
         flex-direction: column;
+        width:100vw;
     }
 
     .cajitas{
-        width: 360px !important;
+        width: auto !important;
+        img{
+            width: 330px !important;
+            height: 250px !important;
+            margin: auto!important;
+        }
     }
 
     .cosas{
@@ -143,6 +157,13 @@
 
     .texto{
         margin-inline-start: 20px;
+        p{
+            font-size: 15px !important;
+        }
+    }
+
+    .subtitulo{
+        margin: 20px 0px 0px 20px;
     }
 
     .medios-pago{
