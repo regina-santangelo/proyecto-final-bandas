@@ -329,7 +329,11 @@ a:visited {
 }
 
 body {
+<<<<<<< HEAD
   background-image: url(/galeria/wall.png);
+=======
+  background-image: url(../galeria/wall.png);
+>>>>>>> 05f32ec7c14c987660805dfcfbbbb6a90d081490
   font-size: 15px;
   font-family: 'Raleway', sans-serif;
   display: -ms-grid;
